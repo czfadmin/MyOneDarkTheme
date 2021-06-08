@@ -1,0 +1,61 @@
+<idea-plugin>
+  <id>com.abchen.myOneDark</id>
+  <name>My One Dark</name>
+  <version>1.2</version>
+  <vendor email="abchen9527@jetbrains.com">ABChen
+  </vendor>
+
+  <description><![CDATA[
+  A dark theme in purple tones. For version 2019.1 and above.
+  <br/><br/>
+
+  To install:
+  <ul>
+  <li>Go to <i>Settings (Preferences) | Plugins</i>, find the theme plugin and install it</li>
+  <li>Restart IDE</li>
+  <li>Go to <i>Settings (Preferences) | Appearance & Behavior | Appearance</i> and see the <i>Theme</i> dropdown</li>
+  </ul>
+  <br/>
+]]></description>
+
+  <change-notes><![CDATA[
+  <b>1.2</b>
+  <ul>
+    <li>Support UI changes for versions 2020</li>
+  </ul><br/>
+
+  <b>1.1</b>
+  <ul>
+    <li>Support UI changes for 2019.2: new tabs, completion, etc.</li>
+    <li>Fix minor staff: caret row, annotation colors, memory indicator, etc.</li>
+  </ul><br/>
+
+  <b>1.0.1</b>
+  <ul>
+    <li>Fix main menu border on Windows</li>
+    <li>Lower whitespace brightness</li>
+    <li>Add installation instructions</li>
+    <li>Unbundle plugin screenshots</li>
+  </ul>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="191.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <themeProvider id="64bac2a8-9558-4b8a-a0e0-a4a17ef91142"
+                   path="/OneDark.theme.json"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
